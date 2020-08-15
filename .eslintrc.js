@@ -7,7 +7,7 @@ module.exports = {
     'react-app',
     // 'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
   ],
 

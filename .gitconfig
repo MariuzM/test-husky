@@ -1,2 +1,0 @@
-[alias]
-    p = "!f() { yarn format && git add -A && git commit -m \"$@\" && git push; }; f"

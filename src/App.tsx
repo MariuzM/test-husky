@@ -1,7 +1,7 @@
 import React from 'react'
 
 const App: React.FC = (): JSX.Element => {
-  return <div>aaa</div>
+  return <div>bbb</div>
 }
 
 export default App

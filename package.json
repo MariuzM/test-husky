@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn format"
+      "pre-commit": "yarn format"
     }
   },
   "dependencies": {

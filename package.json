@@ -2,6 +2,18 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "craco start --config config/webpack.dev.js",
+    "build": "craco build --config config/webpack.prod.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/**/*.tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
+  },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.34",
@@ -20,15 +32,9 @@
     "eslint-config-airbnb-typescript": "^9.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0"
-  },
-  "scripts": {
-    "dev": "craco start --config config/webpack.dev.js",
-    "build": "craco build --config config/webpack.prod.js",
-    "test": "react-scripts test",
-    "test2": "jest",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
